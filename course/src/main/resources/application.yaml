@@ -1,0 +1,22 @@
+
+
+server:
+  port: 8085
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sh-cynosdbmysql-grp-3bn6yyny.sql.tencentcdb.com:27479/rainng_course?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456aA
+
+
+  jackson:
+    time-zone: Asia/Shanghai
+#  data:
+#    mongodb:
+#      uri: mongodb://localhost:27017/rainng_course
+
+mybatis-plus:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.rainng.coursesystem.model
